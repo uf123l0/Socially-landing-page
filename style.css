@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    font-family: 'Poppins','sans-serif';
+    box-sizing: border-box;
+}
+.hero-section{
+    background-image: url("back-image.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 10px 10%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.navbar{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 0;
+   
+}
+.logo{
+    width: 120px;
+}
+
+.navbar ul {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+.navbar ul  a{
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.btn-primary{
+    display: inline-block;
+    color: #fff;
+    background-image: linear-gradient(45deg,#df4881,#c430d7);
+    text-decoration: none;
+    padding: 14px 40px;
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+.btn{
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;  
+}
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+
+}
+.content h1{
+    font-size: 70px;
+    color: #222;
+}
+.content p{
+    margin: 10px 0 30px;
+    color: #333;
+animation-delay: 0.5s;
+}
+.content .btn{
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+.btn-primary:hover{
+    border-top-right-radius: 30px;
+
+}
+.feature-img{
+    width: 330px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+
+}
+.feature-img.Animation{
+              animation-delay: 1s;
+}
+.Animation{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 10px 5%;
+        text-align: center;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul {
+        padding: 0;
+        margin: 20px 0;
+    }
+    .navbar ul a {
+        display: block;
+        margin: 10px 0;
+    }
+    .content h1 {
+        font-size: 40px;
+    }
+    .content p {
+        font-size: 16px;
+    }
+    .btn-primary {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+    .feature-img {
+        width: 250px;
+        right: 5%;
+    }
+}
+@media (max-width: 576px) {
+    .content h1 {
+        font-size: 30px;
+    }
+    .content p {
+        font-size: 14px;
+    }
+    .feature-img {
+        width: 200px;
+    }
+}
